@@ -14,8 +14,8 @@ public class WhenDividingNumbersTest {
     @Steps
     MathWizSteps miguel;
 
-    private Random random = new Random();
-    private int[] numeros = {1, 2, 3, 4, 5};
+    private final Random random = new Random();
+    private final int[] numeros = {1, 2, 3, 4, 5};
 
     @Test
     public void division(){

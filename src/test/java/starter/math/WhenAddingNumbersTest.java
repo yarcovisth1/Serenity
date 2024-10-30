@@ -17,6 +17,7 @@ public class WhenAddingNumbersTest {
 
     private final Random random = new Random();
     private final int[] numeros = {1, 2, 3, 4, 5};
+
     @Test
     public void suma() {
         // Given
