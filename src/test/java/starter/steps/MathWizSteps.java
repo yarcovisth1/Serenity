@@ -33,6 +33,14 @@ public class MathWizSteps {
          total *= factor;
     }
 
+    @Step("#actor divide por {0}")
+    public void divide(int divisor) {
+        if (divisor == 0) {
+            throw new IllegalArgumentException("No se puede dividir por cero");
+        }
+        total /= divisor;
+    }
+
     @Step("#actor deberia ver {0}")
     public void resultadoFactor(int numFactor) {
         if (total != numFactor) {
